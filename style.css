@@ -1,0 +1,271 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.backgroundvid {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundvid video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.profile-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.name {
+  margin-top: 15px;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.scociallogo{
+  display: flex;
+  border-color: antiquewhite;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(36rem,-3rem);
+}
+
+.instalogo{
+  width: 50px;
+  height: 50px;
+}
+
+.scrolldown {
+  margin-top: 40px;
+  transform: translate(4%, 2.3rem);
+  animation: moveUpDown 2s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.scrolldown:hover {
+  animation-play-state: paused;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translate(4%, 2.3rem);
+  }
+  50% {
+    transform: translate(4%, 3.3rem);
+  }
+}
+
+.about-section {
+  min-height: 100vh;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.about-container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.abouttext h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.info p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.projects-section {
+  min-height: 100vh;
+  background: #000;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  color: #ff4b4b;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.project-box {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+  background: #222;
+}
+
+.project-box h2 {
+  color: #ff4b4b;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.project-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.project-btn {
+  background-color: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.project-btn:hover {
+  background-color: #ff6b6b;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .abouttext h1,
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scociallogo {
+    position: absolute;
+    top: -8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .instalogo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .project-box {
+    width: 83%;
+  }
+}
+
+.contact-section {
+  min-height: 100vh;
+  background: #111;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  background: #222;
+  color: white;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-btn {
+  background-color: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #ff6b6b;
+  transform: scale(1.05);
+}
+
+.contact-note {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.contact-note a {
+  color: #ff4b4b;
+  text-decoration: none;
+}
+
+.contact-note a:hover {
+  text-decoration: underline;
+}

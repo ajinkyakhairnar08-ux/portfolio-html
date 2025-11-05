@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajinkya Khairnar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="backgroundvid">
+    <video src="bgvid.mp4" autoplay loop muted playsinline></video>
+    <div class="content">
+      <div class="scociallogo">
+        <a href="https://www.instagram.com/ajinkya.khairnarr?igsh=MTNoOHQ3enh1OTI1Ng=="><img class="instalogo" src="instagramlogo.png" alt="instagram"></a>
+        <a href="https://www.youtube.com/@ajinkyavlogs6528"><img class="instalogo" src="ytlogo.png" alt="youtube"></a>
+        <a href="#"><img class="instalogo" src="linkedin.png" alt="linkedin"></a>
+        <a href="#"><img class="instalogo" src="github-mark-white.png" alt="github"></a>
+      </div> 
+      <img src="face.jpeg" alt="Ajinkya Khairnar" class="profile-img" />
+      <h1 class="name">AJINKYA KHAIRNAR</h1>
+      <h3>Software Developer</h3>
+      <div class="scrolldown" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+         <h1>SCROLL DOWN 🔻</h1><!-- yala haat nahi lavaycha -->
+      </div>
+    </div>
+  </div>
+  <div id="about" class="about-section"> <!--about sec ahe ha!-->
+    <div class="about-container">
+         <div class="abouttext">
+        <h1 class="aboutme">About Me</h1> 
+         </div>
+      <div class="info">
+        <p>
+          I’m <strong>Ajinkya Khairnar</strong>, a passionate <strong>MERN Full Stack Software Developer</strong>
+          with a deep interest in building modern, scalable, and efficient web applications.
+          I specialize in both <strong>frontend and backend development</strong> — working with technologies like
+          <strong>Node.js, Express.js, React, Angular,</strong> and <strong>TypeScript</strong>.
+        </p>
+        <p>
+          I also have hands-on experience with <strong>Oracle Database</strong> and understand
+          how to design and manage data systems effectively.
+          My journey includes participating in <strong>various hackathons</strong> and completing a professional
+          <strong>Full Stack Web Development</strong> course from <strong>Web Guru</strong>.
+        </p>
+        <p>
+          I enjoy solving real-world problems through code, exploring new technologies,
+          and creating user-friendly digital experiences that make a difference.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="projects" class="projects-section">
+    <h1 class="section-title">My Projects</h1>
+        <div class="projects-container">
+      <div class="project-box">
+        <h2>Portfolio Website</h2>
+        <p>A responsive and modern personal portfolio showcasing my skills and projects.</p>
+        <a href="portfolio.html"><button class="project-btn">View Project</button></a>
+      </div>
+      <div class="project-box">
+        <h2>E-Commerce App</h2>
+        <p>Full-stack MERN e-commerce application with user authentication and product management.</p>
+        <button class="project-btn">View Project</button>
+      </div>
+      <div class="project-box">
+        <h2>Chat Application</h2>
+        <p>Real-time chat app using Node.js, Express, and Socket.io for instant communication.</p>
+        <button class="project-btn">View Project</button>
+      </div>
+    </div>
+  </div>
+<div id="contact" class="contact-section">
+    <h1 class="section-title">Contact Me</h1>
+    <div class="contact-container">
+      <form action="#" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+      <p class="contact-note">
+        If there is any problem with the contact form, you can email me directly at:
+        <a href="mailto:ajinkyakhairnar007@gmail.com">ajinkyakhairnar007@gmail.com</a>
+      </p>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>

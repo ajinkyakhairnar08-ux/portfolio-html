@@ -28,6 +28,48 @@ body {
   text-align: center;
 }
 
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 94%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background: transparent; 
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.logo a:hover {
+  color: #ff4b4b;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff4b4b;
+}
+
 .profile-img {
   width: 280px;
   height: 280px;
@@ -170,6 +212,21 @@ body {
 }
 
 @media (max-width: 768px) {
+  
+  .main-header {
+    flex-direction: column;
+    padding: 38px 20px;
+  }
+
+  .nav-links {
+    gap: 29px;
+    margin-top: 20px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
   .abouttext h1,
   .section-title {
     font-size: 2.2rem;

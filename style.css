@@ -99,7 +99,7 @@ body {
 
 .scrolldown {
   margin-top: 40px;
-  transform: translate(4%, 2.3rem);
+  transform: translate(2%, 2.3rem);
   animation: moveUpDown 2s ease-in-out infinite;
   cursor: pointer;
 }

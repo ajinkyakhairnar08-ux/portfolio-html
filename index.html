@@ -29,6 +29,9 @@
       </div>
     </div>
   </div>
+  
+  <!--about me-->
+  
   <div id="about" class="about-section"> <!--about sec ahe ha!-->
     <div class="about-container">
          <div class="abouttext">
@@ -54,6 +57,9 @@
       </div>
     </div>
   </div>
+
+  <!--my projects-->
+
   <div id="projects" class="projects-section">
     <h1 class="section-title">My Projects</h1>
         <div class="projects-container">
@@ -74,29 +80,34 @@
       </div>
     </div>
   </div>
+
+  <!-- Contact Section  -->
+
+  
 <div id="contact" class="contact-section">
   <h1 class="section-title">Contact Me</h1>
   <div class="contact-container">
-    <form action="submitted.html" method="post" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
-      <button type="submit" class="contact-btn">Send Message</button>
-    </form>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/" target="_blank">
-        <img src="instagramlogo.png" alt="Instagram">
-      </a>
-      <a href="https://github.com/" target="_blank">
-        <img src="github-mark-white.png" alt="GitHub">
-      </a>
-      <a href="https://www.linkedin.com/" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn">
-      </a>
-      <a href="https://www.youtube.com/" target="_blank">
-        <img src="ytlogo.png" alt="YouTube">
-      </a>
-    </div>
+       <form onsubmit="window.location.href='submitted.html'; return false;" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+            <button type="submit" class="contact-btn">Send Message</button>
+        </form>
+    <!--social media logos-->
+      <div class="social-icons">      
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="instagramlogo.png" alt="Instagram">
+          </a>
+          <a href="https://github.com/" target="_blank">
+            <img src="github-mark-white.png" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="ytlogo.png" alt="YouTube">
+          </a>
+      </div>
     <p class="contact-note">
       If there is any problem with the contact form, you can email me directly at:
       <a href="mailto:ajinkyakhairnar007@gmail.com">ajinkyakhairnar007@gmail.com</a>
@@ -104,3 +115,4 @@
     <script src="javascript.js"></script>
   </div>
 </div>
+</html>

@@ -218,6 +218,9 @@ body {
   .qualification-details, .mern-details {
     padding: 20px;
   }
+  .qualification-container h1{
+    transform: translate(-0.2rem);
+  }
 }
 
 .info p {
@@ -298,8 +301,7 @@ body {
   }
 
   .nav-links {
-    gap: 29px;
-    margin-top: 20px;
+    display: none;
   }
 
   .nav-links a {

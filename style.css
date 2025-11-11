@@ -333,9 +333,13 @@ body {
     position: absolute;
     top: -8rem;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-52%);
     justify-content: center;
     gap: 20px;
+  }
+
+  .social-icons{
+    transform: translate(0rem,-1rem);
   }
 
   .instalogo {

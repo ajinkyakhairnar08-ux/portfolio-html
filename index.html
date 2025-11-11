@@ -10,33 +10,37 @@
 <body>
   <div class="backgroundvid">
     <video src="bgvid.mp4" autoplay loop muted playsinline></video>
+
+    <!-- Header -->
     <header class="main-header">
-  <div class="logo">
-    <a href="index.html">MY PORTFOLIO</a>
-  </div>
-  <nav class="nav-links">
-    <a href="#about">About Me</a>
-    <a href="#projects">My Projects</a>
-    <a href="#contact">Contact Me</a>
-  </nav>
-</header>
+      <div class="logo">
+        <a href="index.html">MY PORTFOLIO</a>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#qualification">Qualification</a>
+        <a href="#projects">My Projects</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
     <div class="content">
       <img src="face.jpeg" alt="Ajinkya Khairnar" class="profile-img" />
       <h1 class="name">AJINKYA KHAIRNAR</h1>
       <h3>Software Developer</h3>
       <div class="scrolldown" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
-         <h1>SCROLL DOWN 🔻</h1><!-- yala haat nahi lavaycha -->
+         <h1>SCROLL DOWN 🔻</h1>
       </div>
     </div>
   </div>
   
-  <!--about me-->
-  
-  <div id="about" class="about-section"> <!--about sec ahe ha!-->
+  <!-- About Me Section -->
+  <div id="about" class="about-section">
     <div class="about-container">
-         <div class="abouttext">
+      <div class="abouttext">
         <h1 class="aboutme">About Me</h1> 
-         </div>
+      </div>
       <div class="info">
         <p>
           I’m <strong>Ajinkya Khairnar</strong>, a passionate <strong>MERN Full Stack Software Developer</strong>
@@ -58,11 +62,36 @@
     </div>
   </div>
 
-  <!--my projects-->
+  <!-- Qualification Section -->
+  <div id="qualification" class="qualification-section">
+    <div class="qualification-container">
+      <h1 class="section-title">Qualification</h1>
+      
+      <div class="qualification-details">
+        <h2>🎓 Sandip University, Nashik</h2>
+        <p><strong>Degree:</strong> BCA (Bachelor in Computer Application)</p>
+        <p><strong>Domain:</strong> Computer Science</p>
+        <p><strong>CGPA:</strong> 7.5</p>
+      </div>
 
+      <div class="mern-details">
+        <h2>💻 MERN Full Stack Development Topics</h2>
+        <ul>
+          <li><strong>Frontend Development:</strong> HTML5, CSS3, JavaScript (ES6+), React.js, Redux, Tailwind CSS, Responsive Design.</li>
+          <li><strong>Backend Development:</strong> Node.js, Express.js, RESTful APIs, Authentication (JWT), Middleware.</li>
+          <li><strong>Database Management:</strong> MongoDB (CRUD operations, Aggregations, Indexing), Mongoose ORM.</li>
+          <li><strong>Version Control:</strong> Git & GitHub workflows (branching, pull requests, merge conflicts).</li>
+          <li><strong>Deployment & Tools:</strong> Hosting on Vercel/Render, Postman API testing, NPM, Cloud integration.</li>
+          <li><strong>Extra Skills:</strong> TypeScript, Angular basics, Oracle SQL, Agile methodologies, and teamwork in hackathons.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
   <div id="projects" class="projects-section">
     <h1 class="section-title">My Projects</h1>
-        <div class="projects-container">
+    <div class="projects-container">
       <div class="project-box">
         <h2>Portfolio Website</h2>
         <p>A responsive and modern personal portfolio showcasing my skills and projects.</p>
@@ -81,39 +110,31 @@
     </div>
   </div>
 
-  <!-- Contact Section  -->
+  <!-- Contact Section -->
+  <div id="contact" class="contact-section">
+    <h1 class="section-title">Contact Me</h1>
+    <div class="contact-container">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="03c0ae70-1d13-4e68-9e40-40d8c57b8924">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
 
-  
-<div id="contact" class="contact-section">
-  <h1 class="section-title">Contact Me</h1>
-  <div class="contact-container">
-       <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-            <input type="hidden" name="access_key" value="03c0ae70-1d13-4e68-9e40-40d8c57b8924">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
-            <button type="submit" class="contact-btn">Send Message</button>
-        </form>
-    <!--social media logos-->
       <div class="social-icons">      
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="instagramlogo.png" alt="Instagram">
-          </a>
-          <a href="https://github.com/" target="_blank">
-            <img src="github-mark-white.png" alt="GitHub">
-          </a>
-          <a href="https://www.linkedin.com/" target="_blank">
-            <img src="linkedin.png" alt="LinkedIn">
-          </a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="ytlogo.png" alt="YouTube">
-          </a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="instagramlogo.png" alt="Instagram"></a>
+        <a href="https://github.com/" target="_blank"><img src="github-mark-white.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="ytlogo.png" alt="YouTube"></a>
       </div>
-    <p class="contact-note">
-      If there is any problem with the contact form, you can email me directly at:
-      <a href="mailto:ajinkyakhairnar007@gmail.com">ajinkyakhairnar007@gmail.com</a>
-    </p>
-    <script src="javascript.js"></script>
+
+      <p class="contact-note">
+        If there is any problem with the contact form, you can email me directly at:
+        <a href="mailto:ajinkyakhairnar007@gmail.com">ajinkyakhairnar007@gmail.com</a>
+      </p>
+      <script src="javascript.js"></script>
+    </div>
   </div>
-</div>
+</body>
 </html>

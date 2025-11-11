@@ -141,6 +141,85 @@ body {
   letter-spacing: 2px;
 }
 
+/* Qualification Section */
+.qualification-section {
+  min-height: 100vh;
+  background: #000;
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qualification-section h1{
+  transform: translate(18.7rem);
+}
+
+.qualification-container {
+  max-width: 900px;
+  text-align: left;
+}
+
+.qualification-details {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.qualification-details h2 {
+  color: #ff4b4b;
+  margin-bottom: 10px;
+}
+
+.qualification-details p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.mern-details {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.mern-details h2 {
+  color: #ff4b4b;
+  margin-bottom: 20px;
+}
+
+.mern-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mern-details li {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 20px;
+}
+
+.mern-details li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff4b4b;
+  font-size: 1.5rem;
+  top: -3px;
+}
+
+@media (max-width: 768px) {
+  .qualification-container {
+    text-align: center;
+  }
+  .qualification-details, .mern-details {
+    padding: 20px;
+  }
+}
+
 .info p {
   font-size: 1.2rem;
   line-height: 1.8;

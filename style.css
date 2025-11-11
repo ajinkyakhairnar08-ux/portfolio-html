@@ -33,7 +33,7 @@ body {
   top: 0;
   left: 0;
   width: 94%;
-  padding: 20px 50px;
+  padding: 1px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,6 +68,10 @@ body {
 
 .nav-links a:hover {
   color: #ff4b4b;
+}
+
+.cvlogo{
+  display: none;
 }
 
 .profile-img {
@@ -308,6 +312,9 @@ body {
     font-size: 1rem;
   }
 
+  .cvlogo{
+    display: contents;
+  }
   .abouttext h1,
   .section-title {
     font-size: 2.2rem;

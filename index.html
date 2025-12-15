@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+ <meta name="theme-color" content="#B3E5FC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="favicon.jpg">
   <title>Ajinkya Khairnar</title>
@@ -136,7 +137,7 @@
   <div id="contact" class="contact-section">
     <h1 class="section-title">Contact Me</h1>
     <div class="contact-container">
-      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+      <form action="https://api.web3forms.com/submit" method="POST" id="formreset" class="contact-form">
         <input type="hidden" name="access_key" value="03c0ae70-1d13-4e68-9e40-40d8c57b8924">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
@@ -146,7 +147,7 @@
 
       <p class="contact-note">
         If there is any problem with the contact form, you can email me directly at:
-        <a href="mailto:ajinkyakhairnar007@gmail.com">ajinkyakhairnar007@gmail.com</a>
+        <a onclick="gmail()" href="mailto:ajinkyakhairnar007@gmail.com">ajinkyakhairnar007@gmail.com</a>
       </p>
       <script src="javascript.js"></script>
     </div>

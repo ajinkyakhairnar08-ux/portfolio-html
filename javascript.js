@@ -10,3 +10,14 @@ window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
   loader.classList.add('hidden');
 });
+
+
+function gmail() {
+  let redirect = alert("Are you sure you want to email me?");
+  if (alert) {
+    window.location.href = "mailto:ajinkyakhairnar007@gmail.com";
+  }
+  else{
+    document.getElementById("index.html").scrollIntoView({ behavior: 'smooth' });
+  }
+}
